@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_10_26_201738) do
   create_table "inventories", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.decimal "price", precision: 6, scale: 6
+    t.decimal "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

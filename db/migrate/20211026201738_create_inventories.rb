@@ -3,7 +3,7 @@ class CreateInventories < ActiveRecord::Migration[6.1]
     create_table :inventories do |t|
       t.string :name
       t.string :description
-      t.decimal :price, precision: 6, scale: 6
+      t.decimal :price
 
       t.timestamps
     end
